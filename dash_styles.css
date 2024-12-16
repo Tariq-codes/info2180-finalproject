@@ -1,0 +1,320 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #00346b;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 32px;
+    text-align: center;
+}
+/*Sidebar*/
+.sidebar {
+    width: 200px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    padding-top: 80px; 
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar button i {
+    margin-right: 10px; 
+    font-size: 18px;
+}
+
+
+.sidebar button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    color: black;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background-color: #326caa;
+}
+
+.sidebar hr {
+    border: 1px solid #00346b;
+    margin: 20px 0;
+}
+
+.content {
+    margin-left: 280px;
+    padding: 20px;
+    margin-top: 80px;
+    width: calc(100% - 250px);
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+.user-list h1 {
+    font-size: 32px;
+}
+/*Table*/
+table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 5px;
+}
+
+th {
+    background-color: #00346b;
+    color: white;
+    padding: 10px 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+tr:hover {
+    background-color: #e8f0fe;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/*On View User Page*/
+.padd-user-btn{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0062ca;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 775px;
+    margin-top: 20px;
+}
+
+.padd-user-btn:hover {
+    background-color: #027cff;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.add-user-btn {
+    background-color: #00346b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-user-btn:hover {
+    background-color: #0056b3;
+}
+
+/*FORM*/
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; 
+    margin: 50px auto;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    width: 150px; 
+    margin-right: 10px; 
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input::placeholder,
+select {
+    font-size: 16px;
+}
+
+select {
+    padding: 10px;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #00346b;
+    box-shadow: 0 0 5px rgba(0, 52, 107, 0.5);
+}
+
+/*VIEW CONTACT*/
+.view-details-link {
+    text-decoration: none; 
+    color: #007bff; 
+    font-size: 16px; 
+    font-weight: bold; 
+    transition: color 0.3s, transform 0.3s; 
+}
+
+.view-details-link:hover {
+    color: #0056b3; 
+    transform: scale(1.1);
+}
+
+.view-details-link:active {
+    color: #003366; 
+}
+
+/* Styling for the filter links */
+.filters a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-right: 10px;
+    color: white;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.filters a .fas {
+    margin-right: 8px;
+}
+
+
+.filter-link.all {
+    background-color: #6c757d; 
+}
+
+.filter-link.sales {
+    background-color: #ffc107; 
+}
+
+.filter-link.support {
+    background-color: #007bff;
+}
+
+.filter-link.assigned {
+    background-color: #28a745; 
+}
+
+/* Hover effect for links */
+.filters a:hover {
+    opacity: 0.8;
+}
+
+/* Styling for the add new contact button */
+.new-contact button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00346b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 775px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.new-contact button:hover {
+    background-color: #0056b3;
+}
+
+/*ERROR*/
+#responseMessage {
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block;
+}
+.error {
+    color: red;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid red;
+    background-color: #ffe6e6; 
+    border-radius: 5px;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid green;
+    background-color: #e6ffe6; 
+    border-radius: 5px;
+}

@@ -1,0 +1,148 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+header {
+    background-color: #00346b;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.add-user-title h1 {
+    font-size: 32px;
+    margin: 30px; 
+    margin-left: 40px;
+}
+
+/*FORM*/
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    margin-top: 20px; 
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    width: 150px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input::placeholder,
+select {
+    font-size: 16px;
+}
+
+select {
+    padding: 10px;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #00346b;
+    box-shadow: 0 0 5px rgba(0, 52, 107, 0.5);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.add-user-btn {
+    background-color: #00346b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-user-btn:hover {
+    background-color: #0056b3;
+}
+
+/*ERROR*/
+#responseMessage {
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid red;
+    background-color: #ffe6e6;
+    border-radius: 5px;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid green;
+    background-color: #e6ffe6;
+    border-radius: 5px;
+}
+
+/*DASHBOARD*/
+#goToDashboardBtn {
+    background-color: #00346b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#goToDashboardBtn:hover {
+    background-color: #0056b3;
+}
